@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Trabalho</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+    <div class="link-container">
+        <a href="../index.html" class="btn buscar"><b>buscas</b></a>
+        <a href="#" class="btn inserir"><b>inserir</b></a>
+        <a href="../update/index.html" class="btn atualizar"><b>atualizar</b></a>
+        <a href="../delete/index.html" class="btn remover"><b>remover</b></a>
+    </div>
+
+    <h1>Inserir Elemento</h1>
+    <section id="select_table">
+        <label for="table_options">Selecionar Tabela:</label>
+        <select id="table_options" onchange="change_table()">
+        </select><br/>
+
+    </section>
+
+    <!-- Container para os campos de entrada -->
+    <section>
+        <div id="form_container"></div>
+        <button onclick="submit_data()">INSERIR</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

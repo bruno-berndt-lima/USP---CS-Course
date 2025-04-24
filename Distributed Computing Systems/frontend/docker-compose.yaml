@@ -1,0 +1,22 @@
+services:
+  nginx:
+    build:
+      context: .
+    ports:
+      - 7031:80
+    volumes:
+      - /var/log/nginx:/var/log/nginx:rw
+    depends_on:
+      - kafka1
+      - kafka2
+    restart: unless-stopped
+
+  telegraf:
+    image: telegraf:latest
+    restart: always
+    container_name: telegraf
+    hostname: telegraf
+    volumes:
+      - /var/log/nginx:/var/log/nginx:ro
+      - ./telegraf/telegraf.conf:/etc/telegraf/telegraf.conf
+    command: telegraf --config /etc/telegraf/telegraf.conf

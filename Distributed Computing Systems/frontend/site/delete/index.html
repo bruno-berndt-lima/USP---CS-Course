@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Remover Dados</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="link-container">
+        <a href="../index.html" class="btn buscar"><b>buscas</b></a>
+        <a href="../inserir/index.html" class="btn inserir"><b>inserir</b></a>
+        <a href="../update/index.html" class="btn atualizar"><b>atualizar</b></a>
+        <a href="#" class="btn remover"><b>remover</b></a>
+    </div>
+
+    <h1>Remover Elementos</h1>
+    <section id="select_table">
+        <label for="table_options">Selecionar Tabela:</label>
+        <select id="table_options" onchange="change_table()">
+        </select><br/>
+        <label for="filters">Filtros de busca:</label>
+        <input type="text" id="filters" name="filters"><br>
+        <button onclick="query_data()">Buscar</button>
+    </section>
+
+    <section id="view_data">
+        <h3>Dados</h3>
+        <table id="data"></table>
+    </section>
+
+    <section id="update_form">
+        <h3>Atualizar Dados</h3>
+        <form id="form_container"></form>
+        <button onclick="update_data()">Atualizar</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

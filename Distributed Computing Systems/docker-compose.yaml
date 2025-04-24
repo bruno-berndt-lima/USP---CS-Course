@@ -1,0 +1,4 @@
+include:
+  - backend/docker-compose.yaml
+  - frontend/docker-compose.yaml
+  - frontend/websocket/docker-compose.yaml
