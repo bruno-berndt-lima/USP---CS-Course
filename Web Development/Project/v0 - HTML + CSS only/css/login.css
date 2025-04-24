@@ -1,0 +1,641 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MAX WIDTH 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.header {  
+    width: 100%;
+    height: 12%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(235, 237, 239, 0.87) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.menu {
+    /* background-color: red; */
+    width: 62.5%;
+    height: 70%;
+}
+
+#img-logo-header {
+    width: auto;
+    height: 100%;
+    padding: 2px 2px;
+}
+
+.options {
+    /* background-color: yellow; */
+    width: 60%;
+    height: 100%;
+    float: right;  
+
+    display: flex;  
+    align-items: center;
+    justify-content: end;
+}
+
+.options a {text-decoration: none;}
+
+#home-button {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    color: #AA3222;
+    padding: 0 4px 0 0;
+}
+
+#account-button {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    color: #415161;
+    text-decoration: none;
+    padding: 0 4px 0 0;
+}
+
+#fa-cart-plus {
+    font-size: 12px;
+    padding: 0 4px 0 0;
+}
+
+.middle {
+    width: 100%;
+    height: 56%;
+    background-color: #F7F6F7;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.content {
+    /* background-color: greenyellow; */
+    width: 75%;
+    height: 60%;  
+}
+
+.content h1 {
+    font-size: 20px;
+    color: #415161;}
+
+.content input {
+    margin-bottom: 5px;
+}
+
+.login {
+    /* background-color: gray; */
+    width: 100%;
+    height: 49%;
+}
+
+
+#login-data {
+    width: 98%;
+    height: 15%;
+    padding: 3px 0;
+    border-radius: 1vh;
+    border-color: #707070;
+}
+
+#login-password {
+    width: 98%;
+    height: 15%;
+    padding: 3px 0;
+    border-radius: 1vh;
+    border-color: #707070;
+}
+
+.access-button {
+    width: 60%;
+    height: 20%;
+    margin: 0 20%;
+    padding: 3px 0;
+    border-radius: 1vh;
+    border-color: #707070;
+
+    background-color: #FF5151;
+    
+    color: #FFFFFF;
+
+}
+
+#partition { 
+    height: 2%; 
+    margin: 7px 15px 3px 15px;
+    border-top: 2px solid gray; 
+} 
+
+.create-account {
+    /* background-color: lightcoral; */
+    width: 100%;
+    height: 49%;
+} 
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 32%;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    
+    background-color: #415161;
+}
+
+.logo-name-icons {
+    /* background-color: green; */
+    width: 15%;
+    height: 70%;
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;   
+}
+
+#img-logo-footer {
+    width: auto;
+    height: 25%;
+    padding: 10px 0;
+}
+
+.logo-name-icons h1 {
+    font-size: 10px;
+    padding: 10px 0;
+    color: #ffffff
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+.footer-text {
+    /* background-color: red; */
+    width: 15%;
+    height: 70%;
+}
+
+.footer-text h1 {
+    font-size: 7px;
+    padding: 0px 1px 10px 1px;
+    color: #ffffff
+ }
+
+ .footer-text p {
+    font-size: 6px;
+    padding: 0px 1px;
+    color: #ffffff
+ }
+
+ .quick-links {
+    /* background-color: blue; */
+    width: 15%;
+    height: 70%;
+ }
+
+ .quick-links h1 {
+    font-size: 9px;
+    padding: 0px 5px 10px 5px;
+    color: #ffffff
+ }
+
+ .footer-links {
+    font-size: 8px;
+    padding: 0 5px
+ }
+
+ .footer-links a {
+    text-decoration: line;
+    color: #ffffff;
+
+ }
+
+ .important-links {
+    /* background-color: black; */
+    width: 15%;
+    height: 70%;
+ }
+
+ .important-links h1 {
+    font-size: 9px;
+    padding: 0px 5px 10px 5px;
+    color: #ffffff
+ }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MIN WIDTH 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only screen and (min-width: 768px) {
+    .header {  
+        width: 100%;
+        height: 12%;
+    }
+
+    .menu {
+        width: 62.5%;
+        height: 70%;
+    }
+
+    #img-logo-header {
+        width: auto;
+        height: 100%;
+        padding: 2px 2px;
+    }
+
+    .options {
+        width: 68%;
+        height: 100%;
+        float: right;
+    }
+
+    #home-button {
+        font-size: 15px;
+        padding: 0 30px 0 0;
+    }
+
+    #account-button {
+        font-size: 15px;
+        padding: 0 30px 0 0;
+    }
+
+    #fa-cart-plus {
+        font-size: 15px;
+        padding: 0 30px 0 0 ;
+    }
+
+    .middle {
+        width: 100%;
+        height: 56%;
+        /* background-color: pink;  */
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+    
+    .content {
+        /* background-color: greenyellow; */
+        width: 75%;
+        height: 60%;  
+    }
+    
+    .content h1 {
+        font-size: 20px;
+        color: #415161;}
+    
+    .content input {
+        margin-bottom: 5px;
+    }
+    
+    .login {
+        /* background-color: gray; */
+        width: 100%;
+        height: 49%;
+    }
+    
+    
+    #login-data {
+        width: 98%;
+        height: 15%;
+        padding: 3px 0;
+        border-radius: 1vh;
+        border-color: #707070;
+    }
+    
+    #login-password {
+        width: 98%;
+        height: 15%;
+        padding: 3px 0;
+        border-radius: 1vh;
+        border-color: #707070;
+    }
+    
+    .access-button {
+        width: 60%;
+        height: 20%;
+        margin: 0 20%;
+        padding: 3px 0;
+        border-radius: 1vh;
+        border-color: #707070;
+    
+        background-color: #FF5151;
+        ;
+        color: #FFFFFF;
+    
+    }
+    
+    #partition { 
+        height: 2%; 
+        margin: 7px 15px 3px 15px;
+        border-top: 2px solid gray; 
+    } 
+    
+    .create-account {
+        /* background-color: lightcoral; */
+        width: 100%;
+        height: 49%;
+    } 
+    
+    .footer {
+        position: absolute;
+        width: 100%;
+        height: 32%;
+        bottom: 0;
+    }
+    
+    .logo-name-icons {
+        /* background-color: green; */
+        width: 15%;
+        height: 70%;   
+    }
+    
+    #img-logo-footer {
+        width: auto;
+        height: 40%;
+        padding: 3px;
+    }
+    
+    .logo-name-icons h1 {
+        font-size: 25px;
+        padding: 3px;
+    }
+    
+    .footer-icons {
+        padding: 20px 0;
+    }
+
+    .footer-text {
+        width: 15%;
+        height: 70%;
+    }
+    
+    .footer-text h1 {
+        font-size: 12px;
+        padding: 0px 5px 10px 5px;
+     }
+    
+     .footer-text p {
+        font-size: 10px;
+        padding: 0px 3px;
+     }
+     .quick-links {
+        width: 15%;
+        height: 70%;
+     }
+    
+     .quick-links h1 {
+        font-size: 12px;
+        padding: 0px 5px 10px 5px;
+     }
+    
+     .footer-links {
+        font-size: 10px;
+        padding: 0 10px
+     }
+       
+     .important-links {
+        width: 15%;
+        height: 70%;
+     }
+    
+     .important-links h1 {
+        font-size: 12px;
+        padding: 0px 5px 10px 5px;
+     }
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MIN WIDTH 1000px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only screen and (min-width: 1000px) {
+    .header {  
+        width: 100%;
+        height: 12%;
+    }
+
+    .menu {
+        width: 62.5%;
+        height: 70%;
+    }
+
+    #img-logo-header {
+        width: auto;
+        height: 100%;
+        padding: 2px 2px;
+    }
+
+    .options {
+        width: 68%;
+        height: 100%;
+        float: right;
+    }
+
+    #home-button {
+        font-size: 20px;
+        padding: 0 30px 0 0;
+    }
+
+    #account-button {
+        font-size: 20px;
+        padding: 0 30px 0 0;
+    }
+
+    #fa-cart-shopping {
+        display: block;
+        font-size: 20px;
+        padding: 0 30px 0 0 ;
+    }
+
+    .middle {
+        width: 100%;
+        height: 56%;
+        /* background-color: pink;  */
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+
+    .content {
+        width: 100%;
+        height: 56%;
+        /* background-color: yellow; */
+        margin: 20%;
+        display: flex;
+    }
+
+    
+    .login {
+        /* background-color: gray; */
+        width: 80%;
+        height: 100%;
+    }
+    
+    .login h1 {
+        font-size: 30px;
+        color: #415161;}
+    
+    .login input {
+        margin-bottom: 10px;
+    }
+
+    #login-data {
+        width: 60%;
+        height: 15%;
+        padding: 3px;
+        border-radius: 1vh;
+        border-color: #707070;
+    }
+    
+    #login-password {
+        width: 61%;
+        height: 15%;
+        padding: 3px 0;
+        border-radius: 1vh;
+        border-color: #707070;
+    }
+    
+    .login .access-button {
+        width: 61%;
+        height: 20%;
+        margin: 0 0;
+        padding: 3px 0;
+        border-radius: 1vh;
+        border-color: #707070;
+    
+        background-color: #FF5151;
+        color: #FFFFFF;
+    
+    }
+    
+    #partition { 
+        height: 100%; 
+        margin: 7px 15px 3px 15px;
+        border-right: 2px solid #C5C5C5;
+    } 
+    
+    .create-account {
+        /* background-color: lightcoral; */
+        width: 80%;
+        height: 100%;
+    } 
+
+    .create-account h1 {
+        font-size: 30px;
+        margin-left: 38%;
+        color: #415161;
+    }
+    
+    .create-account input {
+        margin-left: 38%;
+        margin-bottom: 10px;
+    }
+
+    .create-account .access-button {
+        width: 61%;
+        height: 20%;
+        margin-left: 38%;
+        padding: 3px 0;
+        border-radius: 1vh;
+        border-color: #707070;
+    
+        background-color: #FF5151;
+        color: #FFFFFF;
+    
+    }
+
+    .footer {
+        position: absolute;
+        width: 100%;
+        height: 32%;
+        bottom: 0;
+    }
+    
+    .logo-name-icons {
+        /* background-color: green; */
+        width: 15%;
+        height: 70%;  
+    }
+    
+    #img-logo-footer {
+        width: auto;
+        height: 40%;
+        padding: 3px;
+    }
+    
+    .logo-name-icons h1 {
+        font-size: 25px;
+        padding: 3px;
+    }
+    
+    .footer-icons {
+        padding: 20px 0;
+    }
+
+    .footer-text {
+        width: 15%;
+        height: 70%;
+    }
+    
+    .footer-text h1 {
+        font-size: 18px;
+        padding: 0px 10px 18px 10px;
+     }
+    
+     .footer-text p {
+        font-size: 15px;
+        padding: 0px 10px;
+     }
+     .quick-links {
+        /* background-color: blue; */
+        width: 15%;
+        height: 70%;
+     }
+    
+     .quick-links h1 {
+        font-size: 18px;
+        padding: 0px 10px 18px 10px;
+        color: #ffffff
+     }
+    
+     .footer-links {
+        font-size: 15px;
+        padding: 0 10px
+     }
+    
+     .footer-links a {
+        text-decoration: line;
+        color: #ffffff;
+    
+     }
+    
+     .important-links {
+        /* background-color: black; */
+        width: 15%;
+        height: 70%;
+     }
+    
+     .important-links h1 {
+        font-size: 18px;
+        padding: 0px 10px 18px 10px;
+        color: #ffffff
+     }
+}

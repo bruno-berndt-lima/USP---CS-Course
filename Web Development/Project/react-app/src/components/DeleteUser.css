@@ -1,0 +1,16 @@
+.delete-user-btn button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #dc3545;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+  
+.delete-user-btn button:hover {
+    color: #ff0000;}
+  
+.delete-user-btn button:focus {
+    outline: none;
+}
+  

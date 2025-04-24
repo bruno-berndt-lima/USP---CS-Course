@@ -1,0 +1,62 @@
+.order-header {
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5px 0px 5px 10px;
+    padding: 10px;
+    border-radius: 8px;
+
+    background-color: #ccc;
+}
+
+.order-preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgba(230, 228, 228, 0.753);
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 99%;
+  }
+  
+  .order-id,
+  .order-username {
+    flex: 1;
+  }
+  
+  .order-user-address,
+  .order-items {
+    flex: 2;
+    margin-left: 20px;
+  }
+  
+  .order-id p,
+  .order-username h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .order-user-address p,
+  .order-items p {
+    margin-bottom: 5px;
+  }
+  
+  .order-user-address strong,
+  .order-items strong {
+    font-weight: bold;
+  }
+  
+  .order-items .item-details {
+    margin-left: 0;
+  }
+  
+  .order-items .item-price,
+  .order-items .item-quantity {
+    margin-left: 20px;
+  }
+  

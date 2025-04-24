@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/createAccount.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Criar Conta</title>
+</head>
+<body>
+        
+    <div class="header">
+        
+        <div class="menu">
+            <img src="images/logo.png" alt="" id="img-logo-header" class="img-circle">
+
+            <div class="options">
+                <a href="file:///home/bruno/Documents/USP%20ICMC/5%C2%BA%20Semestre/Introdu%C3%A7%C3%A3o%20ao%20Desenvolvimento%20Web/SCC0219%20-%20Desenvolvimento%20Web/Projeto/login.html">
+                    <i id="home-button">Home</i>
+                </a>
+                
+                <a href="">
+                    <i id="account-button">Account</i>
+                </a>
+                
+                <a href="">
+                    <i class="fa fa-cart-shopping" style="color: #aa3222;"></i>
+                </a>
+            </div>
+        </div> 
+        
+        
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <h3>* Campos Obrigatórios.</h3>
+
+            <input type="text" id="nome" placeholder="*Nome">
+            <input type="text" id="sobrenome" placeholder="*Sobrenome">         
+            
+            <h4>*Sexo</h4>
+            <input type="radio" id="escolha-sexo" name="sexo" value="masculino">
+            <label id="label-sexo" for="masculino">Masculino</label>
+
+            <input type="radio" id="escolha-sexo" name="sexo" value="feminino">
+            <label id="label-sexo" for="feminino">Feminino</label>
+
+            <input id="data-nascimento" placeholder="*Data de nascimento" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+
+
+            <input type="text" id="cpf" placeholder="*CPF">
+                
+            <input type="text" id="telefone" placeholder="*Seu telefone">
+            <input type="text" id="telefone" placeholder="Outro telefone">
+
+            
+            <input type="text" id="endereco-rua" placeholder="*Endereço">
+            <input type="text" id="endereco-cep" placeholder="*CEP">
+            <input type="text" id="endereco-numero" placeholder="*Número">
+            <input type="text" id="endereco-complemento" placeholder="Complemento">
+            <input type="text" id="endereco-bairro" placeholder="*Bairro">
+            <input type="text" id="endereco-cidade" placeholder="*Cidade">
+            <select id="endereco-estado" name="estado">
+                <option value="" disabled selected>*UF</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
+            <input type="text" id="endereco-referencia" placeholder="Ponto de referência">
+
+            <input type="submit" id="create-button" value="Criar conta">
+            
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logo-name-icons">
+            <img src="images/logo.png" alt="" id="img-logo-footer" class="img-circle">
+            <h1>DigitalFit</h1>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+                </a>
+    
+                <a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                </a>
+    
+                <a href="https://www.twitter.com/">
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-text">
+            <h1>Get in Touch with Us for the Best Quality Custom Prints & Supplies.</h1>
+            <p>Qui dolore ipsum quia dolor sit amet, consec tetur adipisci velit, sed quia non numquam eius modi tempora incidunt lores ta porro ame.</p>
+        </div>
+
+        <div class="quick-links">
+            <h1>Quick links</h1>
+            <div class="footer-links">
+                <a href="">Know More About Us</a><br>
+    
+                <a href="">Visit Store</a><br>
+    
+                <a href="">Let's Connect</a>
+            </div>
+        </div>
+
+        <div class="important-links">
+            <h1>Important links</h1>
+            <div class="footer-links">
+                <a href="">Privacy Policy</a><br>
+    
+                <a href="">Shipping Details</a><br>
+    
+                <a href="">Terms & Conditions</a>
+            </div>
+        </div>
+
+    </div>
+        
+
+
+
+
+</body>
+</html>

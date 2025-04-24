@@ -1,0 +1,23 @@
+.searchbar-div {
+    float: right;
+    width: 60vw;
+    height: 5vh;
+    margin-top: 5%;
+    margin-right: 7vw;
+
+}
+
+.prod-list {
+    width: 60vw;
+    float: right;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+@media (max-width: 700px) {
+    .searchbar-div {
+        float: none;
+        margin-left: 15vw;
+        width: 70vw;
+    }
+}

@@ -1,0 +1,89 @@
+.container {
+    min-height: 63vh;
+    margin-top: 5vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content h1 {
+    font-size: 120%;
+    color: var(--grey-text);
+}
+
+.content-box {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.content-box input {
+    height: 35px;
+    padding: 3px 0;
+    border-radius: 4px;
+    border-color: var(--bg-input);
+}
+
+.content-box .access-button {
+    text-decoration: none;
+    height: 40px;
+    width: 300px;
+    padding: 3px 0;
+    border-radius: 4px;
+    border-color: var(--bg-input);
+    background-color: var(--button-login);
+    color: var(--white);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login {
+    margin: 0 4em 0 0;
+}
+
+.signup {
+    margin: 0 0 0 4em;
+}
+
+.partition {
+    height: 200px;
+    border: 1px solid var(--light-grey);
+}
+
+@media screen and (max-width:912px) {
+    .content-box {
+        margin: 2rem;
+    }
+
+    .partition{
+        height: 1px;
+        width: 370px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .content-box {
+        width: 250px;
+        margin: 2rem 0;
+        align-items: center;
+    }
+
+    .content h1 {
+        font-size: 110%;
+        max-width: 200px;
+    }
+
+    .content-box input, button {
+        width: 200px;
+        padding: 0;
+    }
+}

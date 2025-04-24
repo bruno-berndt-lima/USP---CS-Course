@@ -1,0 +1,18 @@
+.change-user-type button {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+  
+.change-user-type button:hover {
+    background-color: #45a049;
+}
+  
+.change-user-type button:focus {
+    outline: none;
+}
+  

@@ -1,0 +1,254 @@
+.container-profile-background{
+    min-height: 63vh;
+    width: 70%;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+
+.container-profile{
+    width: 70%;
+    margin-top: 90px;
+    margin-bottom: 70px;
+
+}
+
+/*Titulo do forms e do endereço*/
+.profile-title{
+    color: #FF5151;  
+}
+
+/*Container do endereço e do formulario*/
+.form-container, .addresses-container{
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 40px 0px 0px 0px;
+    width: 100%;
+    /*height: 200px;*/
+    /*background-color: red;*/
+    border: 1px solid #DCDCDC;
+    border-radius: 0px 3px 3px 3px;
+
+    color: #666666;
+}
+
+/*Títulos-Textos de cada campo*/
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+/*div que encapsula uma linha do form*/
+.form-row{
+    /*background-color: red;*/
+    width: 100%;
+    display: flex;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+/*div que contem o conjunto do nome*/
+.form-group-name{
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+/*Modifica os inputs do name, cpf e dos telefones*/
+input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*div que contem o conjunto do nome*/
+.form-group-date{
+    width: 400px;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+
+/*Estilizacao do campo date*/
+.form-group-date input[type="date"] {
+    /* Adicione estilos adicionais, se necessário */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*div que contem o conjunto do CPF*/
+.form-group-cpf{
+    width: 400px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+/*div que contem o conjunto dos telefones*/
+.form-group-phone{
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/*Div que contem o conjunto de endereço(rua)*/
+.form-group-address{
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/*Div que contem o conjunto de cep*/
+.form-group-cep{
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/*Div que contem o conjunto de bairro*/
+.form-group-bairro{
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/*Div que contem o conjunto de numero*/
+.form-group-numero{
+    width: 80px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/*Div que contem o conjunto de complemento*/
+.form-group-complemento{
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/*Div que contem o conjunto de cidade*/
+.form-group-cidade{
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/*Div que contem o conjunto de estado*/
+.form-group-estado{
+    width: 40px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+
+/*div que contem o conjunto do botao de enviar*/
+.form-group-submit{
+    margin: 70px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+}
+
+
+/*Estilização dos botoes de salvar e envio*/
+.form-group-submit input[type="submit"] {
+    background-color: #FF5151;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;  
+    width: 358px;
+    height: 50px;
+  }
+
+
+/*Container do endereço*/
+.addresses-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+
+    word-spacing: 1px;
+    letter-spacing: -1.2px;
+    color: black;
+}
+
+/*estiliza o titulo de cada endereço*/
+.address-title{
+    font-weight: 630;
+    font-size: 20px;
+}
+
+/*Div para cada endereço*/
+.address-row{
+    margin: 0px 10px 10px 0px;
+    width:  250px;
+    height: 200px;
+
+    padding: 10px 5px 5px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#primary-address, #secundary-address{
+    margin-top: 10px;
+}
+
+/*Posicionamento do botão de salvar endereço*/
+.btn-save-address{
+    float: left;
+}
+
+
+/*Div que compoe o botao de alteração do endereço*/
+.address-group-alter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/*Estilização botao de alterar endereço*/
+.btn-alter-address{
+    background-color: #FF5151;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;  
+    width: 80%;
+    height: 40px;
+    margin-top: 30px;
+    
+}
+
+.leave-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.leave-container input[type="submit"] {
+    background-color: #FF5151;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;  
+    width: 358px;
+    height: 50px;
+}

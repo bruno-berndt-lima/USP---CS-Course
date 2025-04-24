@@ -1,0 +1,671 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MAX WIDTH 767px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.header {  
+    width: 100%;
+    height: 12%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(235, 237, 239, 0.87) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.menu {
+    /* background-color: red; */
+    width: 62.5%;
+    height: 70%;
+}
+
+#img-logo-header {
+    width: auto;
+    height: 100%;
+    padding: 2px 2px;
+}
+
+.options {
+    /* background-color: yellow; */
+    width: 60%;
+    height: 100%;
+    float: right;  
+
+    display: flex;  
+    align-items: center;
+    justify-content: end;
+}
+
+.options a {text-decoration: none;}
+
+#home-button {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    color: #AA3222;
+    padding: 0 4px 0 0;
+}
+
+#account-button {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    color: #415161;
+    text-decoration: none;
+    padding: 0 4px 0 0;
+}
+
+#fa-cart-plus {
+    font-size: 12px;
+    padding: 0 4px 0 0;
+}
+
+.container {
+    background-color: #F7F6F7;
+    width: 100%;
+    height: 56%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.content {
+    border-style: solid;
+    border-color: #707070;
+    border-width: 1px;
+    padding: 4% 5% 2% 5%;
+    /* background-color: pink; */
+    width: 75%;
+    height: 75%;  
+}
+
+.content h3 {
+    font-size: 50%;
+    color: #000000;
+}
+
+.content h4 {
+    font-size: 90%;
+    font-weight: 500;
+    color: #415161;
+    display: inline;
+}
+
+.content input {
+    margin-bottom: 2px;
+    border-radius: 0.5vh;
+    border-color: #707070;
+    padding: 1px 0;
+    height: 7%;
+}
+
+#nome {width: 47.5%;}
+
+#sobrenome {width: 47.5%;}
+
+#escolha-sexo {
+    width:3%;
+    margin-left: 5%;
+    vertical-align: middle;
+}
+
+#label-sexo {
+    font-size: 80%;
+    color: #333333;
+}
+
+#data-nascimento {
+    font-size: 75%;
+    width: 47.5%;
+    color: #707070;
+}
+
+#cpf {width: 47.5%;}
+
+#telefone {width: 47.5%;}
+
+#endereco-rua {width: 97.7%;}
+
+#endereco-cep {width: 47.5%;}
+
+#endereco-numero {width: 47.5%;}
+
+#endereco-complemento {width: 47.5%;}
+
+#endereco-bairro {width: 47.5%}
+
+#endereco-cidade {width: 68%;}
+
+#endereco-estado {
+    width: 28%;
+    margin-bottom: 1px;
+    border-radius: 0.5vh;
+    border-color: #707070;
+    height: 7.2%;
+}
+
+#endereco-referencia {width: 97.7%;}
+
+#create-button {
+    width: 60%;
+    height: 10%;
+    margin: 3% 20%;
+    padding: 3px 0;
+    border-radius: 1vh;
+    border-color: #707070;
+
+    background-color: #FF5151;
+    
+    color: #FFFFFF;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 32%;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    
+    background-color: #415161;
+}
+
+.logo-name-icons {
+    /* background-color: green; */
+    width: 15%;
+    height: 70%;
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;   
+}
+
+#img-logo-footer {
+    width: auto;
+    height: 25%;
+    padding: 10px 0;
+}
+
+.logo-name-icons h1 {
+    font-size: 10px;
+    padding: 10px 0;
+    color: #ffffff
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+.footer-text {
+    /* background-color: red; */
+    width: 15%;
+    height: 70%;
+}
+
+.footer-text h1 {
+    font-size: 7px;
+    padding: 0px 1px 10px 1px;
+    color: #ffffff
+ }
+
+ .footer-text p {
+    font-size: 6px;
+    padding: 0px 1px;
+    color: #ffffff
+ }
+
+ .quick-links {
+    /* background-color: blue; */
+    width: 15%;
+    height: 70%;
+ }
+
+ .quick-links h1 {
+    font-size: 9px;
+    padding: 0px 5px 10px 5px;
+    color: #ffffff
+ }
+
+ .footer-links {
+    font-size: 8px;
+    padding: 0 5px
+ }
+
+ .footer-links a {
+    text-decoration: line;
+    color: #ffffff;
+
+ }
+
+ .important-links {
+    /* background-color: black; */
+    width: 15%;
+    height: 70%;
+ }
+
+ .important-links h1 {
+    font-size: 9px;
+    padding: 0px 5px 10px 5px;
+    color: #ffffff
+ }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MIN WIDTH 768px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only screen and (min-width: 768px) {
+    .header {  
+        width: 100%;
+        height: 12%;
+    }
+
+    .menu {
+        width: 62.5%;
+        height: 70%;
+    }
+
+    #img-logo-header {
+        width: auto;
+        height: 100%;
+        padding: 2px 2px;
+    }
+
+    .options {
+        width: 68%;
+        height: 100%;
+        float: right;
+    }
+
+    #home-button {
+        font-size: 15px;
+        padding: 0 30px 0 0;
+    }
+
+    #account-button {
+        font-size: 15px;
+        padding: 0 30px 0 0;
+    }
+
+    #fa-cart-plus {
+        font-size: 15px;
+        padding: 0 30px 0 0 ;
+    }
+
+    .container {
+        /* background-color: yellow; */
+        width: 100%;
+        height: 56%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+    
+    .content {
+        border-style: solid;
+        border-width: 1px;
+        padding: 4% 5% 2% 5%;
+        /* background-color: pink; */
+        width: 75%;
+        height: 75%;  
+    }
+    
+    .content h3 {
+        font-size: 80%;
+    }
+    
+    .content h4 {
+        font-size: 100%;
+        font-weight: 500;
+        display: inline;
+    
+    }
+    
+    .content input {
+        margin-bottom: 2px;
+        border-radius: 0.5vh;
+        padding: 1px 0;
+        height: 7%;
+    }
+    
+    #nome {width: 48.8%;}
+    
+    #sobrenome {width: 48.8%;}
+    
+    #escolha-sexo {
+        width: 3%;
+        margin-left: 7%;
+        vertical-align: middle;
+    }
+    
+    #label-sexo {
+        font-size: 100%;
+    }
+    
+    #data-nascimento {
+        width: 48.8%;
+        font-size: 87%;
+    }
+    
+    #cpf {width: 48.8%;}
+    
+    #telefone {width: 48.8%;}
+    
+    #endereco-rua {width: 99%;}
+    
+    #endereco-cep {width: 48.8%;}
+    
+    #endereco-numero {width: 48.8%;}
+    
+    #endereco-complemento {width: 48.8%;}
+    
+    #endereco-bairro {width: 48.8%}
+    
+    #endereco-cidade {width: 70%;}
+    
+    #endereco-estado {
+        width: 28%;
+        margin-bottom: 1px;
+        border-radius: 0.5vh;
+        height: 7.2%;
+    }
+    
+    #endereco-referencia {width: 99%;}
+    
+    #create-button {
+        width: 60%;
+        height: 10%;
+        margin: 3% 20%;
+        padding: 3px 0;
+        border-radius: 1vh;
+    }
+
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 32%;
+        bottom: 0;
+    }
+    
+    .logo-name-icons {
+        /* background-color: green; */
+        width: 15%;
+        height: 70%;   
+    }
+    
+    #img-logo-footer {
+        width: auto;
+        height: 40%;
+        padding: 3px;
+    }
+    
+    .logo-name-icons h1 {
+        font-size: 25px;
+        padding: 3px;
+    }
+    
+    .footer-icons {
+        padding: 20px 0;
+    }
+
+    .footer-text {
+        width: 15%;
+        height: 70%;
+    }
+    
+    .footer-text h1 {
+        font-size: 12px;
+        padding: 0px 5px 10px 5px;
+     }
+    
+     .footer-text p {
+        font-size: 10px;
+        padding: 0px 3px;
+     }
+     .quick-links {
+        width: 15%;
+        height: 70%;
+     }
+    
+     .quick-links h1 {
+        font-size: 12px;
+        padding: 0px 5px 10px 5px;
+     }
+    
+     .footer-links {
+        font-size: 10px;
+        padding: 0 10px
+     }
+       
+     .important-links {
+        width: 15%;
+        height: 70%;
+     }
+    
+     .important-links h1 {
+        font-size: 12px;
+        padding: 0px 5px 10px 5px;
+     }
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ MIN WIDTH 1000px ++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media only screen and (min-width: 1000px) {
+    .header {  
+        width: 100%;
+        height: 12%;
+    }
+
+    .menu {
+        width: 62.5%;
+        height: 70%;
+    }
+
+    #img-logo-header {
+        width: auto;
+        height: 100%;
+        padding: 2px 2px;
+    }
+
+    .options {
+        width: 68%;
+        height: 100%;
+        float: right;
+    }
+
+    #home-button {
+        font-size: 20px;
+        padding: 0 30px 0 0;
+    }
+
+    #account-button {
+        font-size: 20px;
+        padding: 0 30px 0 0;
+    }
+
+    #fa-cart-shopping {
+        display: block;
+        font-size: 20px;
+        padding: 0 30px 0 0 ;
+    }
+
+    
+    .container {
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+
+
+    .content {
+        border-style: solid;
+        border-color: #707070;
+        border-width: 1px;
+        padding: 4% 5% 2% 5%;
+        width: 50%;
+        height: 75%;  
+    }
+    
+    .content h3 {
+        font-size: 100%;
+    }
+    
+    .content h4 {
+        font-size: 1vw;
+        font-weight: 500;
+        display: inline;
+        margin-right: 2%;
+    }
+    
+    .content input {
+        margin-bottom: 2px;
+        border-radius: 0.5vh;
+        margin: 1%; 
+        height: 6.5%;
+    }
+    
+    #nome {width: 28%;}
+    
+    #sobrenome {width: 28%;}
+
+    
+    #escolha-sexo {
+        width: 2%;
+        margin: 0%;
+    }
+    
+    #label-sexo {
+        font-size: 1vw;
+    }
+    
+    #data-nascimento {
+        font-size: 85%;
+        width: 46.6%;
+    }
+    
+    #cpf {width: 46.6%;}
+    
+    #telefone {width: 46.6%;}
+    
+    #endereco-rua {width: 96.5%;}
+    
+    #endereco-cep {width: 46.6%;}
+    
+    #endereco-numero {width: 46.6%;}
+    
+    #endereco-complemento {width: 46.6%;}
+    
+    #endereco-bairro {width: 46.6%}
+    
+    #endereco-cidade {width: 67%;}
+    
+    #endereco-estado {
+        width: 28%;
+        margin-bottom: 1px;
+        border-radius: 0.5vh;
+        height: 7.2%;
+    }
+    
+    #endereco-referencia {width: 96.5%;}
+    
+    #create-button {
+        width: 40%;
+        height: 8%;
+        margin: 3% 30%;
+        padding: 3px 0;
+        border-radius: 1vh;
+    }
+
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 32%;
+        bottom: 0;
+    }
+    
+    .logo-name-icons {
+        width: 15%;
+        height: 70%;  
+    }
+    
+    #img-logo-footer {
+        width: auto;
+        height: 40%;
+        padding: 3px;
+    }
+    
+    .logo-name-icons h1 {
+        font-size: 25px;
+        padding: 3px;
+    }
+    
+    .footer-icons {
+        padding: 20px 0;
+    }
+
+    .footer-text {
+        width: 15%;
+        height: 70%;
+    }
+    
+    .footer-text h1 {
+        font-size: 18px;
+        padding: 0px 10px 18px 10px;
+     }
+    
+     .footer-text p {
+        font-size: 15px;
+        padding: 0px 10px;
+     }
+     .quick-links {
+        /* background-color: blue; */
+        width: 15%;
+        height: 70%;
+     }
+    
+     .quick-links h1 {
+        font-size: 18px;
+        padding: 0px 10px 18px 10px;
+        color: #ffffff
+     }
+    
+     .footer-links {
+        font-size: 15px;
+        padding: 0 10px
+     }
+    
+     .footer-links a {
+        text-decoration: line;
+        color: #ffffff;
+    
+     }
+    
+     .important-links {
+        /* background-color: black; */
+        width: 15%;
+        height: 70%;
+     }
+    
+     .important-links h1 {
+        font-size: 18px;
+        padding: 0px 10px 18px 10px;
+        color: #ffffff
+     }
+}

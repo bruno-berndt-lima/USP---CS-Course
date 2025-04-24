@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.payment-card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 2rem;
+    border: 1px solid var(--border-input);
+}
+
+.payment-card input {
+    height: 1.7rem;
+}
+
+.checkout-items {
+    width: 50%;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: var(--white);
+    border: 1px solid var(--border-input);
+}
+
+.checkout-items ul {
+    border: 1px solid var(--border-input);
+    padding: 1rem;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout-items li {
+    border: 0.5px solid var(--border-input);
+    margin: 0.2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.place-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.place-order button {
+    text-decoration: none;
+    height: 40px;
+    padding: 3px 5px;
+    border-radius: 4px;
+    border-color: var(--bg-input);
+    background-color: var(--button-login);
+    font-weight: 600;
+    cursor: pointer;    
+}
+
+.place-order button span {
+    color: var(--white);
+}
+
+@media screen and (max-width: 700px) {
+    .payment-card, .checkout-items {
+        width: 80%;
+    }
+}

@@ -1,0 +1,44 @@
+'use strict';
+
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const schema = new Schema({
+    number: {
+        type: String,
+        required: true
+    },
+    createDate: {
+        type: Date,
+        required: true,
+        default: Date.now()
+    },
+    status: {
+        type: String,
+        required: true,
+        enum: ['created', 'done'],
+        default: 'created'
+    },
+    user: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    },
+    items: [{
+        sizes: [{
+            size: {
+                type: Number,
+                required: true
+            },
+            stock: {
+                type: Number,
+                required: true
+            }
+        }],
+        product: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Product'
+        }
+    }]
+});
+
+module.exports = mongoose.model('Order', schema);

@@ -1,0 +1,33 @@
+.checkout-item {
+    display: flex;
+    align-items: center;
+}
+
+.checkout-item div {
+    padding: 0.3rem;
+    align-items: center;
+}
+
+.checkout-item p {
+    width: 100%;
+}
+
+.checkout-item-name {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.checkout-item-img {
+    max-width: 200px;
+    width: 30%;
+}
+
+.checkout-item-img img {
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .checkout-item-img {
+        width: 60%;
+    }
+}
