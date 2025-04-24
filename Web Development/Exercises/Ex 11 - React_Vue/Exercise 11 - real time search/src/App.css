@@ -1,0 +1,20 @@
+.container{
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 2px solid black;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.search-input {
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  flex: 2;
+  background-color: white;
+  color: #444;
+  font-size: 16px;
+}

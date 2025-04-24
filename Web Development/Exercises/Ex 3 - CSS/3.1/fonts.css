@@ -1,0 +1,13 @@
+* {font-size: 100%;}
+
+@font-face {
+    font-family: open_sans;
+    src: url(opensans-regular-webfont.woff);
+}
+
+/* fonte baixada
+p {font-size: 2.5em; font-family: open_sans; font-variant: small-caps; font-weight: bold; font-style: italic;}
+*/
+
+/* google font */
+p {font-size: 2.5em; font-family: 'Chivo Mono', monospace; font-variant: small-caps; font-weight: bold; font-style: italic;}

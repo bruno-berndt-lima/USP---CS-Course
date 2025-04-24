@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="questao">
+        <form>
+            <h3>Questão</h3>
+            <input type="radio" id="A" name="alternativa" value="A">
+            <label for="A">A</label><br>
+            <input type="radio" id="B" name="alternativa" value="B">
+            <label for="B">B</label><br>
+            <input type="radio" id="C" name="alternativa" value="C">
+            <label for="C">C</label><br>
+            <input type="radio" id="D" name="alternativa" value="D">
+            <label for="D">D</label> 
+          </form>
+          <br>
+          <button id="anterior">Anterior</button>
+
+          <button id="proxima">Próxima</button>
+    </div>
+
+
+
+    <script>
+        "use strict";
+        
+        let questoes = [
+            {questao: "Qual o nome do filme dirigido por Quentin Tarantino em que um grupo de pessoas se encontra em um café e têm suas histórias entrelaçadas?",
+             alternativas: ["Pulp Fiction", "Kill Bill", "Django Livre", "Era uma vez em Hollywood"], 
+             resposta: "A",
+             acerto: false},
+
+            {questao: "Qual o nome do filme da Disney em que uma jovem se disfarça de homem para poder participar de um torneio de artes marciais?", 
+             alternativas: ["A Bela e a Fera", "A Pequena Sereia", "Mulan", "A Princesa e o Sapo"], 
+             resposta: "C",
+             acerto: false},
+
+            {questao: "Qual o nome do ator que interpretou o personagem principal em O Poderoso Chefão?",
+             alternativas: ["Robert De Niro", "Marlon Brando", "Al Pacino", "James Caan"],
+             resposta: "B",
+             acerto: false},
+
+            {questao: "Qual o nome do diretor de A Origem e Interestelar?", 
+             alternativas: ["Christopher Nolan", "Quentin Tarantino", "Martin Scorsese", "Steven Spielberg"],
+             resposta: "A",
+             acerto: false}
+        ];
+
+        let questaoAtual = 1;
+        let questoesCorretas = 0;
+
+        function atualizarQuestao( ) {
+            if(questaoAtual === questoes.length) {
+                let questao = document.getElementsByTagName("h3")[0];
+                questao.innerHTML = questaoAtual + ". " + questoes[0].questao;
+        
+                let alternativa = document.getElementsByTagName("label");
+                for(let alt = 0; alt < 4; alt++) {
+                    alternativa[alt].innerHTML = questoes[questaoAtual - 1].alternativas[alt];
+                }
+                proximaBtn.innerHTML = "Finalizar";
+            } else if(questaoAtual < questoes.length) {
+                let questao = document.getElementsByTagName("h3")[0];
+                questao.innerHTML = questaoAtual + ". " + questoes[0].questao;
+        
+                let alternativa = document.getElementsByTagName("label");
+                for(let alt = 0; alt < 4; alt++) {
+                    alternativa[alt].innerHTML = questoes[questaoAtual - 1].alternativas[alt];
+                }
+                proximaBtn.innerHTML = "Próxima"
+            } else {
+                let h2 = document.createElement("h2");
+                for(let q in questoes) {
+                    if(questoes[q].acerto) {
+                        questoesCorretas++;
+                    }
+                }
+                h2.innerHTML = "Questões corretas: " + questoesCorretas;
+
+                let div = document.getElementById("questao");
+                div.appendChild(h2);
+            }
+        }
+
+        let proximaBtn = document.getElementById("proxima");
+        proximaBtn.addEventListener("click", function() {
+            let escolhas = document.querySelectorAll('input[name="alternativa"]');
+            for(const escolha of escolhas) {
+                if(escolha.value === questoes[questaoAtual - 1].resposta && escolha.checked) {
+                    questoes[questaoAtual - 1].acerto = true;
+                } else if (escolha.value != questoes[questaoAtual - 1].resposta && escolha.checked){
+                    questoes[questaoAtual - 1].acerto = false;
+                }
+            }
+            questaoAtual++;
+            if(questaoAtual < questoes.length + 2){
+                atualizarQuestao();
+            }
+        })
+
+        let anteriorBtn = document.getElementById("anterior");
+        anteriorBtn.addEventListener("click", function() {
+            if(questaoAtual < questoes.length + 1){
+                questaoAtual--;
+                atualizarQuestao();
+            }
+        })
+
+       
+        atualizarQuestao();
+    </script>
+    
+</body>
+</html>

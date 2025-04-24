@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Forecast</title>
+        <style>
+            /* CSS style*/
+            body {
+                text-align: center;
+                padding-top: 10%;
+                display: flex;
+                background-color: #415161;
+            }
+            * {
+                font-size: 25px;
+                font-family: 'Chivo Mono', monospace;
+                font-family: 'Monoton', cursive;
+                font-family: 'Roboto Slab', serif;
+            }
+            span {
+                font-size: 30px;
+                font-weight: 700;
+            }
+
+            input {
+                border-radius: 0.8vh;
+            }
+
+            .container {
+                height: 50%;
+                width: 80%;
+                border: solid 1px black;
+                border-radius: 1vh;
+                padding: 20px;
+                margin: auto;
+                color: #415161;
+                background-color: #b3b4b5;
+                filter: drop-shadow(10px 10px rgba(0, 0, 0, 0.25));
+            }
+
+            #weather-btn {  
+                color: #415161;
+                width: fit-content;
+                margin: 2rem 0;
+                cursor: pointer;
+                border-radius: 7px;            
+            }
+            
+        </style>
+
+        <!-- Links para as fontes do Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Monoton&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Monoton&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class="container">
+            <h2>Digite a cidade desejada </h2><br>
+            <input type="text" id="city"> <br>
+            <button type="submit" id="weather-btn">Show Weather</button>
+        
+            <div id="div-weather"></div>
+        </div>
+
+        <script>
+            "use strict"
+
+            // Get the HTML element where the weather information will be displayed
+            const display = document.getElementById("div-weather");
+
+            // Get the HTML element of the button used to search for weather information
+            const weather = document.getElementById("weather-btn");
+            
+            // Define the OpenWeatherMap API key to be used
+            const apiKey = '873ee81bc3de3bf22278cae45db3d6f9';
+
+
+            // Create an object to map the weather codes to their description and icon
+            const weather_code = {
+                0: ["Clear sky", "01d"],
+                1: ["Mainly clear", "01d"], 
+                2: ["Partly Cloudy", "02d"],
+                3: ["Overcast", "03d"],
+                45: ["Fog", "50d"],
+                48: ["Depositing rime fog", "50d"],
+                51: ["Light drizzle", "09d"],
+                53: ["Moderate drizzle", "09d"],
+                55: ["Dense drizzle", "09d"],
+                56: ["Light freezing drizzle", "09d"],
+                57: ["Dense freezing drizzle", "09d"],
+                61: ["Slight rain", "10d"],
+                63: ["Moderate rain", "10d"],
+                65: ["Heavy rain", "10d"],
+                66: ["Light freezing rain", "13d"],
+                67: ["Heavy freezing rain", "13d"],
+                71: ["Slight snow fall", "13d"],
+                73: ["Moderate snow fall", "13d"],
+                75: ["Heavy snow fall","13d"],
+                77: ["Snow grains", "13d"], 
+                80: ["Slight rain showers", "09d"],
+                81: ["Moderate rain showers", "09d"],
+                82: ["Violent rain showers", "09d"],
+                85: ["Slight snow showers", "13d"],
+                86: ["Heavy snow showers", "13d"],
+                95: ["Thunderstorm", "11d"],
+                96: ["Thunderstorm with slight hail", "11d"],
+                99: ["Thunderstorm with heavy hail", "11d"]
+            }
+
+
+            // Function to get the latitude, longitude, and city name for a given city using the OpenWeatherMap Geo API
+            async function getLatLng(city, apikey) {
+                // Construct the URL for the API request
+                const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apikey}`;
+
+                // Send the API request and parse the response as JSON
+                return await fetch(url)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Extract the relevant information from the API response
+                        const result = data[0];
+                        let city = result.name;
+                        let lat = result.lat;
+                        let lon = result.lon;
+
+                        // Return the latitude, longitude, and city name as an array
+                        return [lat, lon, city];
+                    })
+                    .catch(error => {   // Handles any errors that may occur during the fetching and processing of the data
+                        display.innerHTML = "Something wrong happened!";
+                    });
+            }
+
+            // Event listener for the weather button that triggers the search for weather information
+            weather.addEventListener("click", async function() {
+                let input = document.getElementById('city');
+                // Get the user input for
+                let city = input.value;
+                
+                display.innerHTML = 'Loading...';
+
+                let x = await getLatLng(city, apiKey)
+                let lat = x[0]
+                let lon = x[1]
+                city = x[2]
+                console.log(lat, lon)
+
+                const file = `http://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`;
+
+
+                // Fetching weather data from Open-Meteo API
+                fetch(file)
+                .then(x => x.json()) // Converts the fetched data to a JSON object
+                .then(y => { // Processes the JSON data
+                    // Creates an image element with the URL for the weather icon, sets its size to 100px
+                    let icon = document.createElement('img');
+                    icon.src= `https://openweathermap.org/img/wn/${weather_code[y.current_weather.weathercode][1]}@2x.png`;
+                    icon.width = "100"
+                    
+                    // Sets up the display on the webpage with the city name, weather icon, temperature and weather description
+                    display.innerHTML = '<span>' + city + '</span>' + "<br>"; 
+                    display.appendChild(icon);
+                    display.innerHTML += "<br>" + y.current_weather.temperature + "°C" + "<br>" + weather_code[y.current_weather.weathercode][0];
+                    console.log(y)
+                })
+                .catch(error => {   // Handles any errors that may occur during the fetching and processing of the data
+                    console.error('Error:', error); 
+                    display.innerHTML = "Something wrong happened!";
+                });
+            })
+
+            
+        </script>
+    </body>
+</html>

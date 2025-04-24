@@ -1,0 +1,17 @@
+/* hexadecimal 
+#cores {width: 200px; height: 200px; background-color: #ccc;}
+*/
+
+/* rgb 
+#cores {width: 200px; height: 200px; background-color: rgba(230, 89, 225, 0.5);}
+*/
+
+/* hsl 
+#cores {width: 200px; height: 200px; background-color: hsla(20, 100, 59, 0.2);}
+*/
+
+#cores {width: 200px; height: 200px; background: linear-gradient(to top right,red, blue);}
+
+/* radial gradiente 
+#cores {width: 200px; height: 200px; background: radial-gradient(red, blue);}
+*/

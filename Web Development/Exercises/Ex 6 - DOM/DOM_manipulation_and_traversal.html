@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Activity</title>
+</head>
+<body>
+    <h1>DOM Manipulation Activity</h1>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <img src="https://via.placeholder.com/100" alt="Placeholder Image">
+    <button id="taskButton">Perform Task</button>
+
+    <script>
+        "use strict"
+
+        function changeText(){
+            let  element = document.getElementsByTagName("p")[0];
+            element.innerHTML = "New Paragraph 1";
+        }
+        function addElement(){
+            let ul = document.getElementsByTagName("ul")[0];
+            let li = document.createElement("li");
+            li.innerHTML = "Item 4";
+            ul.appendChild(li);
+        }
+
+        function changeURL() {
+            let img = document.getElementsByTagName("img")[0];
+            img.src = "https://logodetimes.com/times/atletico-paranaense/logo-atletico-paranaense-novo-escudo-4096.png";
+            img.width = "100";
+        }
+        function changeBG(){
+            let  element = document.getElementsByTagName("p")[1];
+            element.style.backgroundColor = "yellow";
+        }
+
+        function addEvent() {
+            let element = document.getElementsByTagName("p")[0];
+            element.addEventListener("click", function() {element.innerHTML = "Clicked!"})
+        }
+
+        function performTasks() {
+            let element = document.getElementById("taskButton");
+            element.addEventListener("click", function() {
+                 changeText();
+                 addElement(); 
+                 changeURL();
+                 changeBG(); 
+                 addEvent();})
+
+        }
+
+        // Tasks
+        // 1- changeText()
+        // 2- addElement()
+        // 3- changeURL()
+        // 4- changeBG()
+        // 5- addEvent()
+        // 6-
+        performTasks()
+
+    </script>
+</body>
+</html>

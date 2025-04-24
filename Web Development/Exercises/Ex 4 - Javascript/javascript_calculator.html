@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Número 1: <br>
+    <input type="number" id="num1"> <br>
+
+    Número 2: <br>
+    <input type="number" id="num2"> <br>
+
+    <select name="operacao" id="operation">
+        <option value="add">Adição</option>
+
+        <option value="subtract">Subtração</option>
+
+        <option value="multiply">Multiplicação</option>
+
+        <option value="divide">Divisão</option>
+    </select>
+
+    <button type="submit" onclick="performOperation()">Calcular</button> <br>
+    
+    <h2 id="teste"></h2>
+
+    <script>
+        function performOperation() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;    
+            let operation = document.getElementById("operation").value; 
+            let result;
+
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+            switch(operation) {
+                case "add":
+                    result = num1 + num2;
+                    break;
+                case "subtract":
+                    result = num1 - num2;
+                    break;
+                case "multiply":
+                    result = num1 * num2;
+                    break;
+                case "divide":
+                    result = num1 / num2;
+                    break;
+            }
+
+            console.log(result);
+            
+            var resultado = document.getElementById("teste");
+            var string = "O resultado é " + result.toFixed(4);
+            resultado.innerHTML = string;
+        }        
+    </script>
+    
+</body>
+</html>

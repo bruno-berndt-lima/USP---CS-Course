@@ -1,0 +1,2 @@
+/* filters: blur, brightness, contrast, grayscale, invert, opacity, saturate, sepia, hue-rotate, drop-shadow */
+img {margin: 40px 0 0 60px; filter: blur(4px) drop-shadow(10px 20px 5px #000);}

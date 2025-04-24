@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> var() </title>
+    <meta charset="utf-8">
+
+    <style>
+        :root {
+            --bg-color: blue;
+            --txt-color: #fff;
+            --padding: 20px;
+        }
+
+        #div1 {background-color: var(--bg-color); color: var(--txt-color); padding: var(--padding);}
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        <p> Variaveis no CSS devem ser declaradas dentro de um seletor CSS que define seu escopo.</p>
+    </div>
+
+</body>
+
+</html>

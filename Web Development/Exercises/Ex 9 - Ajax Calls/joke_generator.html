@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <style>
+        /* Estilo CSS para a página */
+        body {
+            text-align: center;
+            padding-top: 10%;
+            display: flex;
+            background-color: rgb(37,38,39);
+        }
+        * {
+            font-size: 25px;
+            font-family: 'Chivo Mono', monospace;
+            font-family: 'Monoton', cursive;
+            font-family: 'Roboto Slab', serif;
+        }
+        
+        .container {
+            height: 50%;
+            width: 40%;
+            border: solid 1px black;
+            border-radius: 25px;
+            padding: 20px;
+            margin: auto;
+            color: white;
+            background-color: rgb(51, 55, 59);
+        }
+
+        #joke-btn {
+            font-family: 'Chivo Mono', monospace;
+            font-family: 'Monoton', cursive;
+            width: fit-content;
+            margin: 2rem 0;
+            cursor: pointer;
+            border-radius: 7px;            
+        }
+        
+    </style>
+
+    <!-- Links para as fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Monoton&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Monoton&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Container que envolve o botão e o resultado da piada -->
+    <div class="container">
+        <h2>Click on the button to generate a Joke!</h2> <br>
+        <button id="joke-btn">Get Joke!</button>
+    </div>
+        
+    <!-- Script para obter a piada da API -->
+    <script>
+        'use strict';
+
+        const joke = document.getElementById('joke-btn');
+        const container = document.querySelector('h2');
+        joke.addEventListener('click', function() {
+            container.innerHTML = "Loading..."
+            // URL da API de piadas
+            const file = 'https://official-joke-api.appspot.com/jokes/programming/random';
+            // Buscando a piada usando o método fetch()
+            fetch(file)
+            .then(x => x.json()) // Capturando o JSON da promessa
+            .then(y => { 
+                container.innerHTML = y[0].setup + '<br>' + y[0].punchline;
+            })
+            .catch(error => {   // Tratando o erro caso a API não possa ser acessada
+                console.error('Error:', error); 
+                container.innerHTML = "Sorry, we couldn't load a joke right now. Please try again later.";
+            });       
+        })
+    </script>
+</body>
+</html>

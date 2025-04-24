@@ -1,0 +1,75 @@
+body {
+    font-family: "Courier New", sans-serif;
+    background-color: #bccbde;
+    color: rgb(99, 95, 95);
+}
+
+.container {text-align: center;}
+
+.img-circle {width:30%; height: 30%;border-radius: 50%; border-style: solid; border-color: rgb(74, 110, 230); margin: 20px;}
+
+.card h1 {
+    color: rgb(74, 110, 230);
+}
+
+.card {
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #fff;
+}
+
+.list-inline {
+    list-style-type: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+}
+
+.text-center {text-align: center;}
+
+a {text-align: center; margin: 20px; text-decoration: none; color: #ccc;} 
+
+.fa-facebook {
+    background-image: url(fb-icon.png);
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+.fa-linkedin {
+    background-image: url(linkedin-icon.png);
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+.fa-twitter {
+    background-image: url(twitter-icon.png);
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+
+#catch-me-if-you-can {
+    padding: 20px;
+    width: 207;
+    height: 308;
+}
+
+#dark-knight {
+    padding: 20px;
+    width: 207;
+    height: 308;
+}
+
+#fight-club {
+    padding: 20px;
+    width: 207;
+    height: 308;
+}
+
+#matrix {
+    padding: 20px;
+    width: 207;
+    height: 308;
+}

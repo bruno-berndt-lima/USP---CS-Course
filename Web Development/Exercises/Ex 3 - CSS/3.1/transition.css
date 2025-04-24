@@ -1,0 +1,2 @@
+#exemplo {width: 200px; height: 200px; background-color: red; transition-property: all; transition-duration: 2s; transition-timing-function: linear; transition-delay: 1s;}
+#exemplo:hover {width: 350px; height: 350px; background-color: green;}
