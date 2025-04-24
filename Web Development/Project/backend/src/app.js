@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 
 // Conecta ao banco
-mongoose.connect('mongodb+srv://thiago0708s:X2x0eXxgCy50Qpy8@cluster0.v57bkwv.mongodb.net/digitalFit');
+mongoose.connect('KEY');
 
 // Carrega os models
 const Product = require('./models/product');
