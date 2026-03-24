@@ -1,0 +1,104 @@
+# Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do proj-aula05-uso-do-quartus_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {proj-aula05-uso-do-quartus.vho}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity \proj-aula05-uso-do-quartus\
+# -- Compiling architecture structure of \proj-aula05-uso-do-quartus\
+# 
+vsim work.\\proj-aula05-uso-do-quartus\\
+# vsim work.\\proj-aula05-uso-do-quartus\\ 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.\proj-aula05-uso-do-quartus\(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)
+# Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+add wave -position insertpoint  \
+{sim:/\proj-aula05-uso-do-quartus\/b3}
+add wave -position insertpoint  \
+{sim:/\proj-aula05-uso-do-quartus\/b2}
+add wave -position insertpoint  \
+{sim:/\proj-aula05-uso-do-quartus\/b1}
+add wave -position insertpoint  \
+{sim:/\proj-aula05-uso-do-quartus\/b0}
+add wave -position insertpoint  \
+{sim:/\proj-aula05-uso-do-quartus\/a}
+add wave -position insertpoint  \
+{sim:/\proj-aula05-uso-do-quartus\/b}
+add wave -position insertpoint  \
+{sim:/\proj-aula05-uso-do-quartus\/c} \
+{sim:/\proj-aula05-uso-do-quartus\/d} \
+{sim:/\proj-aula05-uso-do-quartus\/e} \
+{sim:/\proj-aula05-uso-do-quartus\/f} \
+{sim:/\proj-aula05-uso-do-quartus\/g}
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b3} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b2} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b1} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 0 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b1} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b1} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b2} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b1} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b2} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b1} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b3} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b1} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b1} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b2} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 0 0
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b1} 1 0
+run
+force -freeze {sim:/\proj-aula05-uso-do-quartus\/b0} 1 0
+run
