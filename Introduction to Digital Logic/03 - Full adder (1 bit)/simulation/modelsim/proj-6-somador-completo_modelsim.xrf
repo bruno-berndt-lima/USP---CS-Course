@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/bruno/OneDrive/Documents/USP ICMC/Prática em Lógica Digital/proj 6 - somador completo 1 bit/proj-6-somador-completo.bdf
+source_file = 1, C:/Users/bruno/OneDrive/Documents/USP ICMC/Prática em Lógica Digital/proj 6 - somador completo 1 bit/db/proj-6-somador-completo.cbx.xml
+design_name = \proj-6-somador-completo\
+instance = comp, \S~output\, S~output, \proj-6-somador-completo\, 1
+instance = comp, \Cout~output\, Cout~output, \proj-6-somador-completo\, 1
+instance = comp, \Cin~input\, Cin~input, \proj-6-somador-completo\, 1
+instance = comp, \A~input\, A~input, \proj-6-somador-completo\, 1
+instance = comp, \B~input\, B~input, \proj-6-somador-completo\, 1
+instance = comp, \inst3~0\, inst3~0, \proj-6-somador-completo\, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, \proj-6-somador-completo\, 1

@@ -1,0 +1,97 @@
+# Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do Somador_4_bits_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Somador_4_bits.vho}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity Somador_4_bits
+# -- Compiling architecture structure of Somador_4_bits
+# 
+vsim work.somador_4_bits
+# vsim work.somador_4_bits 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.somador_4_bits(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)
+# Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+add wave -position insertpoint  \
+sim:/somador_4_bits/S0 \
+sim:/somador_4_bits/A0 \
+sim:/somador_4_bits/B0 \
+sim:/somador_4_bits/S1 \
+sim:/somador_4_bits/A1 \
+sim:/somador_4_bits/B1 \
+sim:/somador_4_bits/S2 \
+sim:/somador_4_bits/A2 \
+sim:/somador_4_bits/B2 \
+sim:/somador_4_bits/S3 \
+sim:/somador_4_bits/A3 \
+sim:/somador_4_bits/B3 \
+sim:/somador_4_bits/ESTOURO
+force -deposit /A 2#0000
+force -deposit /B 2#0000
+run
+force -deposit /A 2#0010
+force -deposit /B 2#0110
+run
+add list \
+sim:/somador_4_bits/ESTOURO 
+add wave -position insertpoint  \
+sim:/somador_4_bits/S0 \
+sim:/somador_4_bits/S1 \
+sim:/somador_4_bits/S2 \
+sim:/somador_4_bits/S3 \
+sim:/somador_4_bits/ESTOURO
+add wave -position insertpoint  \
+sim:/somador_4_bits/B0 \
+sim:/somador_4_bits/B1 \
+sim:/somador_4_bits/B2 \
+sim:/somador_4_bits/B3
+add wave -position insertpoint  \
+sim:/somador_4_bits/A0 \
+sim:/somador_4_bits/A1 \
+sim:/somador_4_bits/A2 \
+sim:/somador_4_bits/A3
+force -deposit /A 2#1000
+force -deposit /B 2#0111
+run
+force -deposit /A 2#1100
+force -deposit /B 2#0101
+run
+force -deposit /A 2#0001
+force -deposit /B 2#0001
+run
+force -deposit /A 2#1000
+force -deposit /B 2#1000
+run
+force -deposit /A 2#1110
+force -deposit /B 2#1000
+run
+force -deposit /A 2#1000
+force -deposit /B 2#1100
+run
