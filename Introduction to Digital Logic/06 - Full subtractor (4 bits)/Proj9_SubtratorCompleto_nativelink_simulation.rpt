@@ -1,0 +1,138 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cyclonev
+Quartus root          :  c:/altera/14.0/quartus/bin64/
+Quartus sim root      :  c:/altera/14.0/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  vhdl
+Version               :  93
+Simulation Mode       :  GUI
+Sim Output File       :  Proj9_SubtratorCompleto.vho
+Sim SDF file          :  Proj9_SubtratorCompleto__vhdl.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/altera/14.0/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Probing transcript
+ModelSim-Altera Info: # Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+ModelSim-Altera Info: # ERROR: No extended dataflow license exists
+ModelSim-Altera Info: # do Proj9_SubtratorCompleto_run_msim_gate_vhdl.do 
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Copying C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Warning: # ** Warning: Copied C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+ModelSim-Altera Info: #          Updated modelsim.ini.
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vcom -93 -work work {Proj9_SubtratorCompleto.vho}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+ModelSim-Altera Info: # -- Loading package STANDARD
+ModelSim-Altera Info: # -- Loading package TEXTIO
+ModelSim-Altera Info: # -- Loading package std_logic_1164
+ModelSim-Altera Info: # -- Loading package altera_lnsim_components
+ModelSim-Altera Info: # -- Loading package VITAL_Timing
+ModelSim-Altera Info: # -- Loading package VITAL_Primitives
+ModelSim-Altera Info: # -- Loading package cyclonev_atom_pack
+ModelSim-Altera Info: # -- Loading package cyclonev_components
+ModelSim-Altera Info: # -- Compiling entity Proj9_SubtratorCompleto
+ModelSim-Altera Info: # -- Compiling architecture structure of Proj9_SubtratorCompleto
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: vsim work.proj9_subtratorcompleto
+ModelSim-Altera Info: # vsim work.proj9_subtratorcompleto 
+ModelSim-Altera Info: # Loading std.standard
+ModelSim-Altera Info: # Loading std.textio(body)
+ModelSim-Altera Info: # Loading ieee.std_logic_1164(body)
+ModelSim-Altera Info: # Loading altera_lnsim.altera_lnsim_components
+ModelSim-Altera Info: # Loading ieee.vital_timing(body)
+ModelSim-Altera Info: # Loading ieee.vital_primitives(body)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_atom_pack(body)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_components
+ModelSim-Altera Info: # Loading work.proj9_subtratorcompleto(structure)
+ModelSim-Altera Info: # Loading ieee.std_logic_arith(body)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_io_obuf(arch)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_io_ibuf(arch)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+ModelSim-Altera Info: add wave -position insertpoint  \
+ModelSim-Altera Info: sim:/proj9_subtratorcompleto/S0 \
+ModelSim-Altera Info: sim:/proj9_subtratorcompleto/A0 \
+ModelSim-Altera Info: sim:/proj9_subtratorcompleto/B0 \
+ModelSim-Altera Info: sim:/proj9_subtratorcompleto/S1 \
+ModelSim-Altera Info: sim:/proj9_subtratorcompleto/A1 \
+ModelSim-Altera Info: sim:/proj9_subtratorcompleto/B1 \
+ModelSim-Altera Info: sim:/proj9_subtratorcompleto/S2 \
+ModelSim-Altera Info: sim:/proj9_subtratorcompleto/A2 \
+ModelSim-Altera Info: sim:/proj9_subtratorcompleto/B2 \
+ModelSim-Altera Info: sim:/proj9_subtratorcompleto/S3 \
+ModelSim-Altera Info: sim:/proj9_subtratorcompleto/A3 \
+ModelSim-Altera Info: sim:/proj9_subtratorcompleto/B3 \
+ModelSim-Altera Info: sim:/proj9_subtratorcompleto/ESTOURO
+ModelSim-Altera Info: force -deposit /A 2#0000
+ModelSim-Altera Info: force -deposit /B 2#0000
+ModelSim-Altera Info: run
+ModelSim-Altera Info: force -deposit /A 2#1100
+ModelSim-Altera Info: force -deposit /B 2#0100
+ModelSim-Altera Info: run
+ModelSim-Altera Info: force -deposit /A 2#1111, 2#1000 100, 2#0010 100, 2#0111
+ModelSim-Altera Error: # ** Error: (vsim-3462) Value/time pairs must be listed in increasing time order.
+ModelSim-Altera Info: 
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: force -deposit /A 2#1111
+ModelSim-Altera Info: force -deposit /B 2#0101
+ModelSim-Altera Info: run
+ModelSim-Altera Info: force -deposit /A 2#1000
+ModelSim-Altera Info: force -deposit /B 2#0001
+ModelSim-Altera Info: run
+ModelSim-Altera Info: force -deposit /A 2#0010
+ModelSim-Altera Info: force -deposit /B 2#0100
+ModelSim-Altera Info: run
+ModelSim-Altera Info: force -deposit /A 2#0111
+ModelSim-Altera Info: force -deposit /B 2#0010
+ModelSim-Altera Info: run
+Error: Errors encountered while running modelsim do file
+Error: NativeLink simulation flow was NOT successful
+
+
+
+================The following additional information is provided to help identify the cause of error while running nativelink scripts=================
+Nativelink TCL script failed with errorCode:  1
+Nativelink TCL script failed with errorInfo:  1
+    (procedure "launch_sim" line 1)
+    invoked from within
+"launch_sim launch_args_hash"
+    ("eval" body line 1)
+    invoked from within
+"eval launch_sim launch_args_hash"
+    invoked from within
+"if [ info exists ::errorCode ] {
+				set savedCode $::errorCode
+				set savedInfo $::errorInfo
+				error $result $savedInfo $savedCode
+			} else {
+			..."
+    invoked from within
+"if [catch {eval launch_sim launch_args_hash} result ] {
+			set status 1
+			if [ info exists ::errorCode ] {
+				set savedCode $::errorCode
+				set sav..."
+    (procedure "run_sim" line 78)
+    invoked from within
+"run_sim run_sim_args_hash"
+    invoked from within
+"if [ info exists ::errorCode ] {
+			set savedCode $::errorCode
+			set savedInfo $::errorInfo
+			error "$result" $savedInfo $savedCode
+		} else {
+			er..."
+    (procedure "run_eda_simulation_tool" line 330)
+    invoked from within
+"run_eda_simulation_tool eda_opts_hash"

@@ -1,0 +1,64 @@
+|Proj9_SubtratorCompleto
+S0 <= SubtratorCompleto:inst.S
+A0 => SubtratorCompleto:inst.A
+B0 => SubtratorCompleto:inst.B
+S1 <= SubtratorCompleto:inst1.S
+A1 => SubtratorCompleto:inst1.A
+B1 => SubtratorCompleto:inst1.B
+S2 <= SubtratorCompleto:inst2.S
+A2 => SubtratorCompleto:inst2.A
+B2 => SubtratorCompleto:inst2.B
+S3 <= SubtratorCompleto:inst3.S
+A3 => SubtratorCompleto:inst3.A
+B3 => SubtratorCompleto:inst3.B
+ESTOURO <= SubtratorCompleto:inst3.Cout
+
+
+|Proj9_SubtratorCompleto|SubtratorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst7.IN0
+B => inst5.IN1
+Cin => inst1.IN1
+Cin => inst4.IN0
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proj9_SubtratorCompleto|SubtratorCompleto:inst1
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst7.IN0
+B => inst5.IN1
+Cin => inst1.IN1
+Cin => inst4.IN0
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proj9_SubtratorCompleto|SubtratorCompleto:inst2
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst7.IN0
+B => inst5.IN1
+Cin => inst1.IN1
+Cin => inst4.IN0
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proj9_SubtratorCompleto|SubtratorCompleto:inst3
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst2.IN0
+B => inst.IN1
+B => inst7.IN0
+B => inst5.IN1
+Cin => inst1.IN1
+Cin => inst4.IN0
+Cout <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+
+

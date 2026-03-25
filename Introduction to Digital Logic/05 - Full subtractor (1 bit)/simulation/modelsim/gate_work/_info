@@ -1,0 +1,50 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\bruno\OneDrive\Documents\USP ICMC\Prática em Lógica Digital\proj 8 - subtrator completo\simulation\modelsim
+Esubtratorcompleto
+Z1 w1625892110
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 T2oV_jI`5Ehn6U<hDjPcL0
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 OR?bS?jUOKa@55zYJ:UXU0
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 zO9DJi=PWbDWzF?B^Nn`g1
+Z9 dC:\Users\bruno\OneDrive\Documents\USP ICMC\Prática em Lógica Digital\proj 8 - subtrator completo\simulation\modelsim
+Z10 8SubtratorCompleto.vho
+Z11 FSubtratorCompleto.vho
+l0
+L37
+V4hfV1zV4kni?eV]AWj=cS2
+!s100 8EMEBYbeO6<MoCF8jN^ZQ2
+Z12 OV;C;10.1e;51
+31
+!i10b 1
+Z13 !s108 1625892118.739000
+Z14 !s90 -reportprogress|300|-93|-work|work|SubtratorCompleto.vho|
+Z15 !s107 SubtratorCompleto.vho|
+Z16 o-93 -work work -O0
+Z17 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 17 subtratorcompleto 0 22 4hfV1zV4kni?eV]AWj=cS2
+l80
+L55
+VG8Z<<@9UIQhP3@eKV5=Te1
+!s100 ]B_?ghQ:_DFDGznM]K;ji1
+R12
+31
+!i10b 1
+R13
+R14
+R15
+R16
+R17

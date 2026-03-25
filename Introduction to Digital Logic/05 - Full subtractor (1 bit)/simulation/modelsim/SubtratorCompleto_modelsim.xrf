@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/bruno/OneDrive/Documents/USP ICMC/Prática em Lógica Digital/proj 8 - subtrator completo/SubtratorCompleto.bdf
+source_file = 1, C:/Users/bruno/OneDrive/Documents/USP ICMC/Prática em Lógica Digital/proj 8 - subtrator completo/db/SubtratorCompleto.cbx.xml
+design_name = SubtratorCompleto
+instance = comp, \S~output\, S~output, SubtratorCompleto, 1
+instance = comp, \Cout~output\, Cout~output, SubtratorCompleto, 1
+instance = comp, \A~input\, A~input, SubtratorCompleto, 1
+instance = comp, \B~input\, B~input, SubtratorCompleto, 1
+instance = comp, \Cin~input\, Cin~input, SubtratorCompleto, 1
+instance = comp, \inst6~0\, inst6~0, SubtratorCompleto, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, SubtratorCompleto, 1

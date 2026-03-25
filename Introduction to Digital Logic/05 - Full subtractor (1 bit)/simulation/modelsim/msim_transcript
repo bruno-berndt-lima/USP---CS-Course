@@ -1,0 +1,69 @@
+# Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do SubtratorCompleto_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {SubtratorCompleto.vho}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity SubtratorCompleto
+# -- Compiling architecture structure of SubtratorCompleto
+# 
+vsim work.subtratorcompleto
+# vsim work.subtratorcompleto 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.subtratorcompleto(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)
+# Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+add wave -position insertpoint  \
+sim:/subtratorcompleto/S \
+sim:/subtratorcompleto/A \
+sim:/subtratorcompleto/B \
+sim:/subtratorcompleto/Cin \
+sim:/subtratorcompleto/Cout
+force -freeze sim:/subtratorcompleto/A 0 0
+force -freeze sim:/subtratorcompleto/B 0 0
+force -freeze sim:/subtratorcompleto/Cin 0 0
+run
+force -freeze sim:/subtratorcompleto/B 1 0
+run
+force -freeze sim:/subtratorcompleto/B 0 0
+force -freeze sim:/subtratorcompleto/A 1 0
+run
+force -freeze sim:/subtratorcompleto/B 1 0
+run
+force -freeze sim:/subtratorcompleto/Cin 1 0
+force -freeze sim:/subtratorcompleto/A 0 0
+force -freeze sim:/subtratorcompleto/B 0 0
+run
+force -freeze sim:/subtratorcompleto/B 1 0
+run
+force -freeze sim:/subtratorcompleto/B 0 0
+force -freeze sim:/subtratorcompleto/A 1 0
+run
+force -freeze sim:/subtratorcompleto/B 1 0
+run

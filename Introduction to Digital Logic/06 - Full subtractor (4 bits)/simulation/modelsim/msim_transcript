@@ -1,0 +1,76 @@
+# Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do Proj9_SubtratorCompleto_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Proj9_SubtratorCompleto.vho}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity Proj9_SubtratorCompleto
+# -- Compiling architecture structure of Proj9_SubtratorCompleto
+# 
+vsim work.proj9_subtratorcompleto
+# vsim work.proj9_subtratorcompleto 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.proj9_subtratorcompleto(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)
+# Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+add wave -position insertpoint  \
+sim:/proj9_subtratorcompleto/S0 \
+sim:/proj9_subtratorcompleto/A0 \
+sim:/proj9_subtratorcompleto/B0 \
+sim:/proj9_subtratorcompleto/S1 \
+sim:/proj9_subtratorcompleto/A1 \
+sim:/proj9_subtratorcompleto/B1 \
+sim:/proj9_subtratorcompleto/S2 \
+sim:/proj9_subtratorcompleto/A2 \
+sim:/proj9_subtratorcompleto/B2 \
+sim:/proj9_subtratorcompleto/S3 \
+sim:/proj9_subtratorcompleto/A3 \
+sim:/proj9_subtratorcompleto/B3 \
+sim:/proj9_subtratorcompleto/ESTOURO
+force -deposit /A 2#0000
+force -deposit /B 2#0000
+run
+force -deposit /A 2#1100
+force -deposit /B 2#0100
+run
+force -deposit /A 2#1111, 2#1000 100, 2#0010 100, 2#0111
+# ** Error: (vsim-3462) Value/time pairs must be listed in increasing time order.
+# 
+force -deposit /A 2#1111
+force -deposit /B 2#0101
+run
+force -deposit /A 2#1000
+force -deposit /B 2#0001
+run
+force -deposit /A 2#0010
+force -deposit /B 2#0100
+run
+force -deposit /A 2#0111
+force -deposit /B 2#0010
+run
