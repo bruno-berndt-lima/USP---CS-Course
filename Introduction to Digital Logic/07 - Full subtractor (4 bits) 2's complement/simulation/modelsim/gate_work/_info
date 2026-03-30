@@ -1,0 +1,50 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\bruno\OneDrive\Documents\USP ICMC\Prática em Lógica Digital\proj 10 - subtrator 4 bits com complemento de 2\simulation\modelsim
+Esubtrator_4_bits_com_complemento_de_2
+Z1 w1625978369
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 T2oV_jI`5Ehn6U<hDjPcL0
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 OR?bS?jUOKa@55zYJ:UXU0
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 zO9DJi=PWbDWzF?B^Nn`g1
+Z9 dC:\Users\bruno\OneDrive\Documents\USP ICMC\Prática em Lógica Digital\proj 10 - subtrator 4 bits com complemento de 2\simulation\modelsim
+Z10 8subtrator_4_bits_com_complemento_de_2.vho
+Z11 Fsubtrator_4_bits_com_complemento_de_2.vho
+l0
+L37
+V7:@Mh879@Z2LeFLF9KBi53
+!s100 _IQlCZHHQnO0RANLg49[N0
+Z12 OV;C;10.1e;51
+31
+!i10b 1
+Z13 !s108 1625978379.359000
+Z14 !s90 -reportprogress|300|-93|-work|work|subtrator_4_bits_com_complemento_de_2.vho|
+Z15 !s107 subtrator_4_bits_com_complemento_de_2.vho|
+Z16 o-93 -work work -O0
+Z17 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 37 subtrator_4_bits_com_complemento_de_2 0 22 7:@Mh879@Z2LeFLF9KBi53
+l124
+L73
+VJXhCNJd4XQ7zc^a1Ij:1O1
+!s100 laZ6BBPF1k3jE<_6^RlNa0
+R12
+31
+!i10b 1
+R13
+R14
+R15
+R16
+R17

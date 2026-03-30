@@ -1,0 +1,138 @@
+# Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do subtrator_4_bits_com_complemento_de_2_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {subtrator_4_bits_com_complemento_de_2.vho}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity subtrator_4_bits_com_complemento_de_2
+# -- Compiling architecture structure of subtrator_4_bits_com_complemento_de_2
+# 
+vsim work.subtrator_4_bits_com_complemento_de_2
+# vsim work.subtrator_4_bits_com_complemento_de_2 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.subtrator_4_bits_com_complemento_de_2(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)
+# Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+add wave -position insertpoint  \
+sim:/subtrator_4_bits_com_complemento_de_2/S0 \
+sim:/subtrator_4_bits_com_complemento_de_2/A0 \
+sim:/subtrator_4_bits_com_complemento_de_2/B0 \
+sim:/subtrator_4_bits_com_complemento_de_2/OPERACAO \
+sim:/subtrator_4_bits_com_complemento_de_2/S1 \
+sim:/subtrator_4_bits_com_complemento_de_2/A1 \
+sim:/subtrator_4_bits_com_complemento_de_2/B1 \
+sim:/subtrator_4_bits_com_complemento_de_2/S2 \
+sim:/subtrator_4_bits_com_complemento_de_2/A2 \
+sim:/subtrator_4_bits_com_complemento_de_2/B2 \
+sim:/subtrator_4_bits_com_complemento_de_2/S3 \
+sim:/subtrator_4_bits_com_complemento_de_2/A3 \
+sim:/subtrator_4_bits_com_complemento_de_2/B3 \
+sim:/subtrator_4_bits_com_complemento_de_2/ESTOURO
+force -freeze sim:/subtrator_4_bits_com_complemento_de_2/OPERACAO 0 0
+force -deposit /A 2#0011
+force -deposit /B 2#0001
+run
+add wave -position insertpoint  \
+sim:/subtrator_4_bits_com_complemento_de_2/S0 \
+sim:/subtrator_4_bits_com_complemento_de_2/A0 \
+sim:/subtrator_4_bits_com_complemento_de_2/B0 \
+sim:/subtrator_4_bits_com_complemento_de_2/OPERACAO \
+sim:/subtrator_4_bits_com_complemento_de_2/S1 \
+sim:/subtrator_4_bits_com_complemento_de_2/A1 \
+sim:/subtrator_4_bits_com_complemento_de_2/B1 \
+sim:/subtrator_4_bits_com_complemento_de_2/S2 \
+sim:/subtrator_4_bits_com_complemento_de_2/A2 \
+sim:/subtrator_4_bits_com_complemento_de_2/B2 \
+sim:/subtrator_4_bits_com_complemento_de_2/S3 \
+sim:/subtrator_4_bits_com_complemento_de_2/A3 \
+sim:/subtrator_4_bits_com_complemento_de_2/B3 \
+sim:/subtrator_4_bits_com_complemento_de_2/ESTOURO
+add wave -position insertpoint  \
+sim:/subtrator_4_bits_com_complemento_de_2/S0 \
+sim:/subtrator_4_bits_com_complemento_de_2/A0 \
+sim:/subtrator_4_bits_com_complemento_de_2/B0 \
+sim:/subtrator_4_bits_com_complemento_de_2/OPERACAO \
+sim:/subtrator_4_bits_com_complemento_de_2/S1 \
+sim:/subtrator_4_bits_com_complemento_de_2/A1 \
+sim:/subtrator_4_bits_com_complemento_de_2/B1 \
+sim:/subtrator_4_bits_com_complemento_de_2/S2 \
+sim:/subtrator_4_bits_com_complemento_de_2/A2 \
+sim:/subtrator_4_bits_com_complemento_de_2/B2 \
+sim:/subtrator_4_bits_com_complemento_de_2/S3 \
+sim:/subtrator_4_bits_com_complemento_de_2/A3 \
+sim:/subtrator_4_bits_com_complemento_de_2/B3 \
+sim:/subtrator_4_bits_com_complemento_de_2/ESTOURO
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/subtrator_4_bits_com_complemento_de_2/S0 \
+sim:/subtrator_4_bits_com_complemento_de_2/A0 \
+sim:/subtrator_4_bits_com_complemento_de_2/B0 \
+sim:/subtrator_4_bits_com_complemento_de_2/OPERACAO \
+sim:/subtrator_4_bits_com_complemento_de_2/S1 \
+sim:/subtrator_4_bits_com_complemento_de_2/A1 \
+sim:/subtrator_4_bits_com_complemento_de_2/B1 \
+sim:/subtrator_4_bits_com_complemento_de_2/S2 \
+sim:/subtrator_4_bits_com_complemento_de_2/A2 \
+sim:/subtrator_4_bits_com_complemento_de_2/B2 \
+sim:/subtrator_4_bits_com_complemento_de_2/S3 \
+sim:/subtrator_4_bits_com_complemento_de_2/A3 \
+sim:/subtrator_4_bits_com_complemento_de_2/B3 \
+sim:/subtrator_4_bits_com_complemento_de_2/ESTOURO
+add wave -position insertpoint  \
+sim:/subtrator_4_bits_com_complemento_de_2/S0 \
+sim:/subtrator_4_bits_com_complemento_de_2/A0 \
+sim:/subtrator_4_bits_com_complemento_de_2/B0 \
+sim:/subtrator_4_bits_com_complemento_de_2/OPERACAO \
+sim:/subtrator_4_bits_com_complemento_de_2/S1 \
+sim:/subtrator_4_bits_com_complemento_de_2/A1 \
+sim:/subtrator_4_bits_com_complemento_de_2/B1 \
+sim:/subtrator_4_bits_com_complemento_de_2/S2 \
+sim:/subtrator_4_bits_com_complemento_de_2/A2 \
+sim:/subtrator_4_bits_com_complemento_de_2/B2 \
+sim:/subtrator_4_bits_com_complemento_de_2/S3 \
+sim:/subtrator_4_bits_com_complemento_de_2/A3 \
+sim:/subtrator_4_bits_com_complemento_de_2/B3 \
+sim:/subtrator_4_bits_com_complemento_de_2/ESTOURO
+force -deposit /A 2#0010
+force -deposit /B 2#1110
+run
+force -deposit /A 2#1111
+force -deposit /B 2#1000
+run
+force -freeze sim:/subtrator_4_bits_com_complemento_de_2/OPERACAO 1 0
+force -deposit /A 2#0011
+force -deposit /B 2#1000
+run
+force -deposit /A 2#1000
+force -deposit /B 2#0001
+run
+force -deposit /A 2#0001
+force -deposit /B 2#0100
+run

@@ -1,0 +1,395 @@
+|proj-11-multiplicador
+P0 <= multiplicador:inst.S
+A0 => multiplicador:inst.A
+A0 => multiplicador:inst15.A
+A0 => multiplicador:inst4.A
+A0 => multiplicador:inst9.A
+B0 => multiplicador:inst.B
+B0 => multiplicador:inst14.B
+B0 => multiplicador:inst12.B
+B0 => multiplicador:inst13.B
+P1 <= multiplicador:inst15.S
+A1 => multiplicador:inst14.A
+A1 => multiplicador:inst11.A
+A1 => multiplicador:inst1.A
+A1 => multiplicador:inst5.A
+B1 => multiplicador:inst15.B
+B1 => multiplicador:inst11.B
+B1 => multiplicador:inst10.B
+B1 => multiplicador:inst8.B
+P2 <= multiplicador:inst4.S
+A2 => multiplicador:inst12.A
+A2 => multiplicador:inst10.A
+A2 => multiplicador:inst6.A
+A2 => multiplicador:inst3.A
+B2 => multiplicador:inst4.B
+B2 => multiplicador:inst1.B
+B2 => multiplicador:inst6.B
+B2 => multiplicador:inst2.B
+P3 <= multiplicador:inst9.S
+A3 => multiplicador:inst13.A
+A3 => multiplicador:inst8.A
+A3 => multiplicador:inst2.A
+A3 => multiplicador:inst7.A
+B3 => multiplicador:inst9.B
+B3 => multiplicador:inst5.B
+B3 => multiplicador:inst3.B
+B3 => multiplicador:inst7.B
+P4 <= multiplicador:inst5.S
+P5 <= multiplicador:inst3.S
+P6 <= multiplicador:inst7.S
+P7 <= multiplicador:inst7.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst15
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst15|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst14
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst14|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst4
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst4|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst11
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst11|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst12
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst12|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst9
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst9|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst1
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst1|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst10
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst10|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst13
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst13|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst5
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst5|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst6
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst6|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst8
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst8|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst3
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst3|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst2
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst2|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|proj-11-multiplicador|Multiplicador:inst7
+S <= SomadorCompleto:inst.S
+res_anterior => SomadorCompleto:inst.A
+A => inst2.IN0
+B => inst2.IN1
+Cin => SomadorCompleto:inst.Cin
+Cout <= SomadorCompleto:inst.Cout
+
+
+|proj-11-multiplicador|Multiplicador:inst7|SomadorCompleto:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Cin => inst1.IN0
+Cin => inst5.IN1
+A => inst.IN0
+A => inst2.IN1
+A => inst4.IN0
+B => inst.IN1
+B => inst2.IN0
+B => inst4.IN1
+Cout <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+

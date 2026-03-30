@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\bruno\OneDrive\Documents\USP ICMC\Prática em Lógica Digital\proj 11 - multiplicador 4 bits\simulation\modelsim
+E\proj-11-multiplicador\
+Z1 w1627799155
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 T2oV_jI`5Ehn6U<hDjPcL0
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx8 cyclonev 19 cyclonev_components 0 22 OR?bS?jUOKa@55zYJ:UXU0
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 zO9DJi=PWbDWzF?B^Nn`g1
+Z9 dC:\Users\bruno\OneDrive\Documents\USP ICMC\Prática em Lógica Digital\proj 11 - multiplicador 4 bits\simulation\modelsim
+Z10 8proj-11-multiplicador.vho
+Z11 Fproj-11-multiplicador.vho
+l0
+L37
+VfU]gQOEENWL;:J@`n]WLm2
+!s100 l54XJQeW5hmVXWF4ENMm=3
+Z12 OV;C;10.1e;51
+31
+!i10b 1
+Z13 !s108 1627799163.116000
+Z14 !s90 -reportprogress|300|-93|-work|work|proj-11-multiplicador.vho|
+Z15 !s107 proj-11-multiplicador.vho|
+Z16 o-93 -work work -O0
+Z17 tExplicit 1
+n@134proj-11-multiplicador@134
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+DEx4 work 23 \proj-11-multiplicador\ 0 22 fU]gQOEENWL;:J@`n]WLm2
+l157
+L77
+V5?:Oj4R<IAF_G12zLT29f0
+!s100 DX=8VR>nfDI=V]mDKD0JU0
+R12
+31
+!i10b 1
+R13
+R14
+R15
+R16
+R17

@@ -1,0 +1,89 @@
+# Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do proj-11-multiplicador_run_msim_gate_vhdl.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {proj-11-multiplicador.vho}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package altera_lnsim_components
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cyclonev_atom_pack
+# -- Loading package cyclonev_components
+# -- Compiling entity \proj-11-multiplicador\
+# -- Compiling architecture structure of \proj-11-multiplicador\
+# 
+vsim work.\\proj-11-multiplicador\\
+# vsim work.\\proj-11-multiplicador\\ 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading altera_lnsim.altera_lnsim_components
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cyclonev.cyclonev_atom_pack(body)
+# Loading cyclonev.cyclonev_components
+# Loading work.\proj-11-multiplicador\(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cyclonev.cyclonev_io_obuf(arch)
+# Loading cyclonev.cyclonev_io_ibuf(arch)
+# Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+add wave -position insertpoint  \
+{sim:/\proj-11-multiplicador\/P0} \
+{sim:/\proj-11-multiplicador\/A0} \
+{sim:/\proj-11-multiplicador\/B0} \
+{sim:/\proj-11-multiplicador\/P1} \
+{sim:/\proj-11-multiplicador\/A1} \
+{sim:/\proj-11-multiplicador\/B1} \
+{sim:/\proj-11-multiplicador\/P2} \
+{sim:/\proj-11-multiplicador\/A2} \
+{sim:/\proj-11-multiplicador\/B2} \
+{sim:/\proj-11-multiplicador\/P3} \
+{sim:/\proj-11-multiplicador\/A3} \
+{sim:/\proj-11-multiplicador\/B3} \
+{sim:/\proj-11-multiplicador\/P4} \
+{sim:/\proj-11-multiplicador\/P5} \
+{sim:/\proj-11-multiplicador\/P6} \
+{sim:/\proj-11-multiplicador\/P7}
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: bruno  Hostname: LAPTOP-72UIK1JK  ProcessID: 9268
+# 
+#           Attempting to use alternate WLF file "./wlft58sasa".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft58sasa
+# 
+force -deposit /A 2#0000
+force -deposit /B 2#0000
+run
+force -deposit /A 2#0001
+force -deposit /B 2#0001
+run
+force -deposit /A 2#1010
+force -deposit /B 2#1000
+run
+force -deposit /A 2#1111
+force -deposit /B 2#0100
+run
+force -deposti /A 2#1111
+# Unknown option: deposti
+# ** Error: (vish-4003) Invalid option '-deposti'.
+# Usage: force [-freeze | -drive | -deposit] [-cancel <time>] [-repeat <time>] <object_name> {<value> [[@]<time>[<unit>]]}...
+force -deposit /A 2#1111
+force -deposit 2#0111
+# ** Error: (vish-4001) Incorrect number of arguments.
+# Usage: force [-freeze | -drive | -deposit] [-cancel <time>] [-repeat <time>] <object_name> {<value> [[@]<time>[<unit>]]}...
+force -deposit /B 2#0111
+run

@@ -1,0 +1,153 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cyclonev
+Quartus root          :  c:/altera/14.0/quartus/bin64/
+Quartus sim root      :  c:/altera/14.0/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  vhdl
+Version               :  93
+Simulation Mode       :  GUI
+Sim Output File       :  proj-11-multiplicador.vho
+Sim SDF file          :  proj-11-multiplicador__vhdl.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/altera/14.0/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File proj-11-multiplicador_run_msim_gate_vhdl.do already exists - backing up current file as proj-11-multiplicador_run_msim_gate_vhdl.do.bak2
+Probing transcript
+ModelSim-Altera Info: # Reading C:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+ModelSim-Altera Info: # ERROR: No extended dataflow license exists
+ModelSim-Altera Info: # do proj-11-multiplicador_run_msim_gate_vhdl.do 
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Copying C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Warning: # ** Warning: Copied C:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+ModelSim-Altera Info: #          Updated modelsim.ini.
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vcom -93 -work work {proj-11-multiplicador.vho}
+ModelSim-Altera Info: # Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+ModelSim-Altera Info: # -- Loading package STANDARD
+ModelSim-Altera Info: # -- Loading package TEXTIO
+ModelSim-Altera Info: # -- Loading package std_logic_1164
+ModelSim-Altera Info: # -- Loading package altera_lnsim_components
+ModelSim-Altera Info: # -- Loading package VITAL_Timing
+ModelSim-Altera Info: # -- Loading package VITAL_Primitives
+ModelSim-Altera Info: # -- Loading package cyclonev_atom_pack
+ModelSim-Altera Info: # -- Loading package cyclonev_components
+ModelSim-Altera Info: # -- Compiling entity \proj-11-multiplicador\
+ModelSim-Altera Info: # -- Compiling architecture structure of \proj-11-multiplicador\
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: vsim work.\\proj-11-multiplicador\\
+ModelSim-Altera Info: # vsim work.\\proj-11-multiplicador\\ 
+ModelSim-Altera Info: # Loading std.standard
+ModelSim-Altera Info: # Loading std.textio(body)
+ModelSim-Altera Info: # Loading ieee.std_logic_1164(body)
+ModelSim-Altera Info: # Loading altera_lnsim.altera_lnsim_components
+ModelSim-Altera Info: # Loading ieee.vital_timing(body)
+ModelSim-Altera Info: # Loading ieee.vital_primitives(body)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_atom_pack(body)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_components
+ModelSim-Altera Info: # Loading work.\proj-11-multiplicador\(structure)
+ModelSim-Altera Info: # Loading ieee.std_logic_arith(body)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_io_obuf(arch)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_io_ibuf(arch)
+ModelSim-Altera Info: # Loading cyclonev.cyclonev_lcell_comb(vital_lcell_comb)
+ModelSim-Altera Info: add wave -position insertpoint  \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/P0} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/A0} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/B0} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/P1} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/A1} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/B1} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/P2} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/A2} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/B2} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/P3} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/A3} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/B3} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/P4} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/P5} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/P6} \
+ModelSim-Altera Info: {sim:/\proj-11-multiplicador\/P7}
+ModelSim-Altera Warning: # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: #           File in use by: bruno  Hostname: LAPTOP-72UIK1JK  ProcessID: 9268
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: #           Attempting to use alternate WLF file "./wlft58sasa".
+ModelSim-Altera Warning: # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: #           Using alternate file: ./wlft58sasa
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: force -deposit /A 2#0000
+ModelSim-Altera Info: force -deposit /B 2#0000
+ModelSim-Altera Info: run
+ModelSim-Altera Info: force -deposit /A 2#0001
+ModelSim-Altera Info: force -deposit /B 2#0001
+ModelSim-Altera Info: run
+ModelSim-Altera Info: force -deposit /A 2#1010
+ModelSim-Altera Info: force -deposit /B 2#1000
+ModelSim-Altera Info: run
+ModelSim-Altera Info: force -deposit /A 2#1111
+ModelSim-Altera Info: force -deposit /B 2#0100
+ModelSim-Altera Info: run
+ModelSim-Altera Info: force -deposti /A 2#1111
+ModelSim-Altera Info: # Unknown option: deposti
+ModelSim-Altera Error: # ** Error: (vish-4003) Invalid option '-deposti'.
+ModelSim-Altera Info: 
+ModelSim-Altera Info: # Usage: force [-freeze | -drive | -deposit] [-cancel <time>] [-repeat <time>] <object_name> {<value> [[@]<time>[<unit>]]}...
+ModelSim-Altera Info: force -deposit /A 2#1111
+ModelSim-Altera Info: force -deposit 2#0111
+ModelSim-Altera Error: # ** Error: (vish-4001) Incorrect number of arguments.
+ModelSim-Altera Info: 
+ModelSim-Altera Info: # Usage: force [-freeze | -drive | -deposit] [-cancel <time>] [-repeat <time>] <object_name> {<value> [[@]<time>[<unit>]]}...
+ModelSim-Altera Info: force -deposit /B 2#0111
+ModelSim-Altera Info: run
+Error: Errors encountered while running modelsim do file
+Error: NativeLink simulation flow was NOT successful
+
+
+
+================The following additional information is provided to help identify the cause of error while running nativelink scripts=================
+Nativelink TCL script failed with errorCode:  1
+Nativelink TCL script failed with errorInfo:  1
+    (procedure "launch_sim" line 1)
+    invoked from within
+"launch_sim launch_args_hash"
+    ("eval" body line 1)
+    invoked from within
+"eval launch_sim launch_args_hash"
+    invoked from within
+"if [ info exists ::errorCode ] {
+				set savedCode $::errorCode
+				set savedInfo $::errorInfo
+				error $result $savedInfo $savedCode
+			} else {
+			..."
+    invoked from within
+"if [catch {eval launch_sim launch_args_hash} result ] {
+			set status 1
+			if [ info exists ::errorCode ] {
+				set savedCode $::errorCode
+				set sav..."
+    (procedure "run_sim" line 78)
+    invoked from within
+"run_sim run_sim_args_hash"
+    invoked from within
+"if [ info exists ::errorCode ] {
+			set savedCode $::errorCode
+			set savedInfo $::errorInfo
+			error "$result" $savedInfo $savedCode
+		} else {
+			er..."
+    (procedure "run_eda_simulation_tool" line 330)
+    invoked from within
+"run_eda_simulation_tool eda_opts_hash"
