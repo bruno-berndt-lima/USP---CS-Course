@@ -1,0 +1,2 @@
+// "a" e "b" duas cidades com distancia "c" entre si
+    int a, b, c;
